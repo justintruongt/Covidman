@@ -6,14 +6,14 @@ export default class TileMap {
     this.tileSize = tileSize;
 
     this.yellowDot = new Image();
-    this.yellowDot.src = "../images/yellowdot.png";
+    this.yellowDot.src = "images/yellowdot.png";
 
     this.pinkDot = new Image();
-    this.pinkDot.src = "../images/pinkdot.png";
+    this.pinkDot.src = "images/pinkdot.png";
     //this.yellowDot = this.pinkDot;
 
     this.wall = new Image();
-    this.wall.src = "../images/wall.png";
+    this.wall.src = "images/wall.png";
 
     this.powerDot = this.pinkDot;
     this.powerDotAnimationTimerDefault = 30;
@@ -187,13 +187,13 @@ export default class TileMap {
     }
     return false;
   }
-didWin() {
-  return this.#dotsLeft() ===0;
-}
+  didWin() {
+    return this.#dotsLeft() === 0;
+  }
 
-#dotsLeft() {
-  return this.map.flat().filter((tile) => tile === 0).length;
-}
+  #dotsLeft() {
+    return this.map.flat().filter((tile) => tile === 0).length;
+  }
 
   eatDot(x, y) {
     const row = y / this.tileSize;
