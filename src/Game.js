@@ -65,7 +65,7 @@ function drawGameEnd() {
     gradient.addColorStop("1.0", "red");
 
     ctx.fillStyle = gradient;
-    ctx.fillText(text, 10, canvas.height / 2);
+    ctx.fillText(text, 30, canvas.height / 2);
   }
 }
 
