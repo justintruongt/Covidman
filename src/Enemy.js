@@ -36,10 +36,9 @@ export default class Enemy {
       this.y < pacman.y + size &&
       this.y + size > pacman.y
     ) {
-        return true; 
-    } 
-    else {
-        return false; 
+      return true;
+    } else {
+      return false;
     }
   }
 
@@ -153,13 +152,13 @@ export default class Enemy {
 
   #loadImages() {
     this.normalGhost = new Image();
-    this.normalGhost.src = "/images/ghost.png";
+    this.normalGhost.src = "images/ghost.png";
 
     this.scaredGhost = new Image();
-    this.scaredGhost.src = "/images/scaredGhost.png";
+    this.scaredGhost.src = "images/scaredGhost.png";
 
     this.scaredGhost2 = new Image();
-    this.scaredGhost2.src = "/images/scaredGhost2.png";
+    this.scaredGhost2.src = "images/scaredGhost2.png";
 
     this.image = this.normalGhost;
   }
